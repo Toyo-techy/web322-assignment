@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Climate Solutions</title>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="navbar-start">
+            <a href="/" class="btn btn-ghost text-xl whitespace-nowrap">Climate Solutions</a>
+        </div>
+        
+        <div class="navbar-end">
+            <!-- Desktop menu -->
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <details>
+                            <summary>Sector</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 right-0 w-64">
+                                <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                                <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                                <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <a>Sector</a>
+                        <ul class="p-2">
+                            <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                            <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                            <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="hero min-h-64 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg mb-12">
+            <div class="hero-content text-center text-white">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">About</h1>
+                    <p class="mb-5">Get to know the passionate developer behind Climate Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Profile Image -->
+            <div class="flex justify-center">
+                <div class="avatar">
+                    <div class="w-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Profile Picture" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="prose lg:prose-lg max-w-none">
+                <div class="bg-base-200 p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-primary">Hello, I'm Alex Johnson</h2>
+                    
+                    <p class="mb-4">
+                        I'm a passionate web developer and environmental advocate currently pursuing my studies in 
+                        Computer Programming at Seneca College. My journey into tech began with a deep concern for 
+                        our planet's future and a desire to use technology as a force for positive change.
+                    </p>
+
+                    <p class="mb-4">
+                        When I'm not coding, you can find me hiking in the beautiful trails around Ontario, 
+                        experimenting with sustainable living practices, or volunteering with local environmental 
+                        organizations. I believe that small actions can lead to significant impact when we work together.
+                    </p>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-secondary">Current Studies</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>WEB322 - Web Programming Tools and Frameworks</li>
+                            <li>DBS311 - Database Design and SQL</li>
+                            <li>OOP345 - Object-Oriented Programming</li>
+                            <li>SYS366 - Computer Networks</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-secondary">Hobbies & Interests</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-outline">Hiking</span>
+                            <span class="badge badge-outline">Photography</span>
+                            <span class="badge badge-outline">Sustainable Living</span>
+                            <span class="badge badge-outline">Open Source</span>
+                            <span class="badge badge-outline">Rock Climbing</span>
+                            <span class="badge badge-outline">Renewable Energy</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-secondary">Tech Stack</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-medium mb-2">Frontend</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• HTML/CSS/JavaScript</li>
+                                    <li>• React & Node.js</li>
+                                    <li>• Tailwind CSS</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-2">Backend</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• Express.js</li>
+                                    <li>• MongoDB</li>
+                                    <li>• PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-3 text-secondary">My Mission</h3>
+                        <p class="italic">
+                            "To leverage technology in creating sustainable solutions that help combat climate change 
+                            and promote environmental awareness. Every line of code I write is a step towards a 
+                            greener, more sustainable future."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="text-center mt-16">
+            <h2 class="text-3xl font-bold mb-4">Let's Connect!</h2>
+            <p class="text-lg mb-8">Interested in collaborating on climate solutions or just want to chat about tech?</p>
+            <div class="space-x-4">
+                <a href="mailto:alex.johnson@example.com" class="btn btn-primary btn-lg">Get In Touch</a>
+                <a href="/solutions/projects" class="btn btn-outline btn-lg">View My Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-10 mt-16">
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a href="/" class="link link-hover">Home</a>
+                <a href="/about" class="link link-hover">About</a>
+                <a href="/solutions/projects" class="link link-hover">Projects</a>
+            </div>
+            <div>
+                <p>Copyright © 2025 - Climate Solutions Initiative</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

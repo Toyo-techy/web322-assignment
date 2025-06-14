@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Climate Solutions</title>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="navbar-start">
+            <a href="/" class="btn btn-ghost text-xl whitespace-nowrap">Climate Solutions</a>
+        </div>
+        
+        <div class="navbar-end">
+            <!-- Desktop menu -->
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <details>
+                            <summary>Sector</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 right-0 w-64">
+                                <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                                <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                                <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <a>Sector</a>
+                        <ul class="p-2">
+                            <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                            <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                            <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 404 Error Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Error Section -->
+        <div class="hero min-h-screen bg-gradient-to-br from-red-400 via-purple-500 to-blue-500">
+            <div class="hero-content text-center text-white">
+                <div class="max-w-2xl">
+                    <!-- Large 404 Number -->
+                    <div class="mb-8">
+                        <h1 class="text-9xl font-black mb-4 opacity-80">404</h1>
+                        <div class="w-32 h-1 bg-white mx-auto mb-8"></div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <h2 class="text-4xl font-bold mb-4">Oops! Page Not Found</h2>
+                    <p class="text-xl mb-8 opacity-90">
+                        The page you're looking for seems to have vanished into thin air, just like carbon emissions should! 
+                        Don't worry though, we'll help you find your way back to greener pastures.
+                    </p>
+
+                    <!-- Animated Icon -->
+                    <div class="mb-8">
+                        <div class="inline-block animate-bounce">
+                            <svg class="w-24 h-24 mx-auto text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                        <a href="/" class="btn btn-primary btn-lg">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            Go Home
+                        </a>
+                        <a href="/solutions/projects" class="btn btn-secondary btn-lg">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                            View Projects
+                        </a>
+                        <button onclick="goBack()" class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-gray-800">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                            </svg>
+                            Go Back
+                        </button>
+                    </div>
+
+                    <!-- Search Suggestion -->
+                    <div class="mt-12 p-6 bg-black bg-opacity-20 rounded-lg backdrop-blur-sm">
+                        <h3 class="text-lg font-semibold mb-4">Looking for something specific?</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                            <div>
+                                <h4 class="font-medium mb-2">Popular Pages</h4>
+                                <ul class="space-y-1">
+                                    <li><a href="/" class="link link-hover">Home</a></li>
+                                    <li><a href="/about" class="link link-hover">About</a></li>
+                                    <li><a href="/solutions/projects" class="link link-hover">All Projects</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-2">By Sector</h4>
+                                <ul class="space-y-1">
+                                    <li><a href="/solutions/projects?sector=Energy" class="link link-hover">Energy</a></li>
+                                    <li><a href="/solutions/projects?sector=Transportation" class="link link-hover">Transportation</a></li>
+                                    <li><a href="/solutions/projects?sector=Buildings" class="link link-hover">Buildings</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-2">Quick Tips</h4>
+                                <ul class="space-y-1 text-xs opacity-75">
+                                    <li>• Check the URL spelling</li>
+                                    <li>• Use navigation menu</li>
+                                    <li>• Try the search function</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fun Environmental Fact -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-semibold mb-2">🌱 Did You Know?</h3>
+            <p class="text-lg">
+                While you were looking for that page, approximately 1,000 tons of CO₂ were absorbed by forests worldwide! 
+                Every second counts in our fight against climate change.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-10">
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a href="/" class="link link-hover">Home</a>
+                <a href="/about" class="link link-hover">About</a>
+                <a href="/solutions/projects" class="link link-hover">Projects</a>
+            </div>
+            <div>
+                <p>Copyright © 2024 - Climate Solutions Initiative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add a subtle floating animation to the 404 text
+            const errorNumber = document.querySelector('h1');
+            if (errorNumber) {
+                setInterval(() => {
+                    errorNumber.style.transform = 'translateY(' + Math.sin(Date.now() * 0.001) * 5 + 'px)';
+                }, 16);
+            }
+        });
+    </script>
+</body>
+</html>

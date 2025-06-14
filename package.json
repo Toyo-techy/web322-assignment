@@ -1,0 +1,35 @@
+{
+  "name": "assignment-3",
+  "version": "1.0.0",
+  "description": "Web server using Express.js to serve project data",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js",
+    "tw:build": "npx @tailwindcss/cli -i ./public/css/tailwind.css -o ./public/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "webprojects"
+  },
+  "keywords": [
+    "climate",
+    "sustainability",
+    "web",
+    "express",
+    "projects",
+    "API",
+    "nodejs",
+    "environment"
+  ],
+  "author": "Toyomfon Edem Akpan",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.43"
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Solutions</title>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="navbar-start">
+            <a href="/" class="btn btn-ghost text-xl whitespace-nowrap">Climate Solutions</a>
+        </div>
+        
+        <div class="navbar-end">
+            <!-- Desktop menu -->
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <details>
+                            <summary>Sector</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 right-0 w-64">
+                                <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                                <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                                <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow">
+                    <li><a href="/about">About</a></li>
+                    <li>
+                        <a>Sector</a>
+                        <ul class="p-2">
+                            <li><a href="/solutions/projects?sector=Land%20Sinks">Land Sinks</a></li>
+                            <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+                            <li><a href="/solutions/projects?sector=Food%2C%20Agriculture%2C%20and%20Land%20Use">Food, Agriculture, and Land Use</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="hero min-h-96 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg mb-12">
+            <div class="hero-content text-center text-white">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Discover Climate Solutions</h1>
+                    <p class="mb-5">Explore innovative projects and technologies that are making a difference in our fight against climate change. Join us in building a sustainable future.</p>
+                    <a href="/solutions/projects" class="btn btn-primary btn-lg">Explore All Projects</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 - Abandoned Farmland Restoration -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="https://drawdown.org/sites/default/files/solutions/solution_farmlandrestoration01.jpg" alt="Abandoned Farmland Restoration" class="w-full h-48 object-cover">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Abandoned Farmland Restoration</h2>
+                    <p>Restoration can bring degraded farmland back into productivity and sequester carbon in the process. This solution enhances food security, livelihoods, and ecosystem health.</p>
+                    <div class="card-actions justify-end items-center">
+                        <div class="badge badge-outline">Land Sinks</div>
+                        <a href="/solutions/projects/1" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project Card 2 - Efficient Aviation -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="https://drawdown.org/sites/default/files/solutions/airplanes-web.jpg" alt="Efficient Aviation" class="w-full h-48 object-cover">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Efficient Aviation</h2>
+                    <p>Technologies and practices that can lower airplane emissions include better engines, wingtips, and reducing airplanes' weight. Advanced aircraft technologies reduce fuel consumption in passenger and freight flights.</p>
+                    <div class="card-actions justify-end items-center">
+                        <div class="badge badge-outline">Transportation</div>
+                        <a href="/solutions/projects/13" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 - Distributed Energy Storage -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <img src="https://drawdown.org/sites/default/files/solutions/solution_distributedenergystorage01.jpg" alt="Distributed Energy Storage" class="w-full h-48 object-cover">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Distributed Energy Storage</h2>
+                    <p>Standalone batteries and electric vehicles store energy. They can enable 24/7 electricity supply even when the sun isn't shining or the wind isn't blowing.</p>
+                    <div class="card-actions justify-end items-center">
+                        <div class="badge badge-outline">Electricity</div>
+                        <a href="/solutions/projects/14" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-16">
+            <h2 class="text-3xl font-bold mb-4">Ready to Make a Difference?</h2>
+            <p class="text-lg mb-8">Join thousands of innovators and activists working towards a sustainable future across all climate solution sectors.</p>
+            <div class="space-x-4">
+                <a href="/solutions/projects" class="btn btn-primary btn-lg">View All Projects</a>
+                <a href="/about" class="btn btn-outline btn-lg">Learn About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-base-200 text-base-content p-10 mt-16">
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a href="/" class="link link-hover">Home</a>
+                <a href="/about" class="link link-hover">About</a>
+                <a href="/solutions/projects" class="link link-hover">Projects</a>
+            </div>
+            <div>
+                <p>Copyright © 2025 - Climate Solutions Initiative</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
