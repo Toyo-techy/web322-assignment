@@ -5,23 +5,12 @@
     {
       "src": "server.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
     }
   ],
   "routes": [
     {
-      "src": "/css/(.*)",
-      "dest": "public/css/$1"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "public/static/$1"
+      "src": "/public/(.*)",
+      "dest": "public/$1"
     },
     {
       "src": "/(.*)",
